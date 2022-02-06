@@ -26,7 +26,8 @@ public class Main {
         pbz.addCustomerToBank(hrvoje);
         pbz.displayBankCustomers();
 
-        hrvoje.addAmount(50.00);
+        rba.depositMoney(hrvoje,50.00);
+        rba.withdrawMoney(hrvoje, 160.00);
 
 	}
 }

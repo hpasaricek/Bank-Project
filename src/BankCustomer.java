@@ -28,6 +28,7 @@ public class BankCustomer {
     public void deductAmount(double amount) {
         if (bankAmount < amount) {
             System.out.println("Not enough money in account to withdraw.");
+            return;
         }
 
         bankAmount -= amount;

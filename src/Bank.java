@@ -2,8 +2,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Bank {
-    private String bankName;
-    private Map<Integer, BankCustomer> bankCustomers = new HashMap<>();
+    private final String bankName;
+    private final Map<Integer, BankCustomer> bankCustomers = new HashMap<>();
 
     public Bank(String bankName) {
         this.bankName = bankName;
@@ -49,7 +49,7 @@ public class Bank {
 
     public void depositMoney(BankCustomer customer, double amount) {
         if (bankCustomerExists(customer)) {
-             customer.addAmount(amount);
+            customer.addAmount(amount);
         }
     }
 
